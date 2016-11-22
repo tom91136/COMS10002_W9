@@ -11,7 +11,7 @@ instead. Your home directory can be found by typing `cd ~`.
 
 ##Compile
 
-Modify references for SDL2 to `-I/Library/Frameworks/SDL2.framework/Headers`
+Modify references for SDL2 to `-I/Library/Frameworks/SDL2.framework/Headers` and add the flag `-framework SDL2`.
 
 For example, given:
 
@@ -19,5 +19,5 @@ For example, given:
 
 You should change it like so:
 
-    gcc -std=c99 -Wall -O3 -pedantic sketch.c display.c -I/Library/Frameworks/SDL2.framework/Headers -o sketch
+    gcc -std=c99 -Wall -O3 -pedantic sketch.c display.c -I/Library/Frameworks/SDL2.framework/Headers -framework SDL2 -o sketch
 
